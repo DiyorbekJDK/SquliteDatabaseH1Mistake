@@ -19,6 +19,7 @@ class ContactList : AppCompatActivity() {
         supportActionBar?.hide()
         val rv: RecyclerView = findViewById(R.id.rv)
         rv.apply {
+            layoutManager = LinearLayoutManager(this@ContactList)
             adapter = rvAdapter
         }
 
